@@ -1,5 +1,5 @@
 ﻿using System;
-using DAS.Infrastructure;
+using Provausio.Common;
 using Provausio.Practices.DDD;
 using Xunit;
 
@@ -231,7 +231,7 @@ namespace Provausio.Practices.Tests.DDD
                 var coll = ObjectPropertyCollection.FromKvpString(input);
                 return new TimestampObj
                 {
-                    Timestamp = DAS.Infrastructure.Timestamp.FromMilliseconds(coll[nameof(Timestamp)]),
+                    Timestamp = Common.Timestamp.FromMilliseconds(coll[nameof(Timestamp)]),
                     Prop1 = coll[nameof(Prop1)]
                 };
             }

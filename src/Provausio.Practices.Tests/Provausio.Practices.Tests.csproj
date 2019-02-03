@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Provausio.Practices\Provausio.Practices.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EventSourcing\" />
+  </ItemGroup>
+
 </Project>
